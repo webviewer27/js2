@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Обменка (switch)</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var usd;
+		var uah;
+		var rub;
+		var valuta1 = prompt("Введите валюту которую меняете");
+		var valuta2 = prompt("Введите валюту на которую меняете");
+		var suma = prompt("Введите сумму которую хотите поменять");
+
+		
+
+		if (suma>0){
+			switch (valuta1=='uah'){
+				case  (valuta2=='usd'):
+
+               	alert("Ваша сумма равна " + (Math.ceil(suma/28.5))+' $');
+               	break; 
+
+               	case  (valuta2=='rub'):
+
+               	alert("Ваша сумма равна " + (Math.ceil(suma/0.45))+' рубля');
+               	break;
+			}
+			}
+		else if (suma>0){
+			switch (valuta1=='usd')
+		{
+				case  (valuta2=='uah'):
+
+               alert("Ваша сумма равна " + (Math.ceil(suma*28.5))+' грн.');
+               break; 
+
+               case  (valuta2=='rub'):
+
+               alert("Ваша сумма равна " + (Math.ceil(suma*80))+' рубля');
+               break;
+			}
+			}
+			
+		else if (suma>0){
+			switch (valuta1=='rub')
+		
+		{
+				case  (valuta2=='uah'):
+
+               alert("Ваша сумма равна " + (Math.ceil(suma*0.45))+' грн.');
+               break; 
+
+               case  (valuta2=='usd'):
+
+               alert("Ваша сумма равна " + (Math.ceil(suma/80))+' $');
+               break;
+			}	
+			}
+			else{alert("Вы что то ввели не так!")}
+
+
+
+
+
+	</script>
+</body>
+</html>

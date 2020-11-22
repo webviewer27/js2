@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>homework2_js</title>
+	
+</head>
+<body>
+<script type="text/javascript">
+	
+		var val1 = prompt("Введите валюту с которой меняете. Пример ввода - usd/uah/rub");
+		var val2 = prompt("Введите валюту на которую меняете. Пример ввода - usd/uah/rub");
+		var ans = prompt("Введите сумму для обмена");
+
+
+
+
+
+		if ((val1=='uah')&&(val2=='usd')&&(ans>0)){			
+			alert("Ваша сумма после обмена будет равна " + (Math.round(ans/28.5)));}
+			else if ((val1=='uah')&&(val2=='rub')&&(ans>0)){			
+				alert("Ваша сумма после обмена будет равна " + (Math.round(ans/0.45)));}
+			else if ((val1=='usd')&&(val2=='uah')&&(ans>0)){			
+					alert("Ваша сумма после обмена будет равна " + (Math.round(ans*28.5)));}
+			else if ((val1=='usd')&&(val2=='uah')&&(ans>0)){			
+					alert("Ваша сумма после обмена будет равна " + (Math.round(ans*28.5)));}
+			else if ((val1=='usd')&&(val2=='rub')&&(ans>0)){			
+						alert("Ваша сумма после обмена будет равна " + (Math.round(ans*80)));}
+			else if ((val1=='rub')&&(val2=='uah')&&(ans>0)){			
+							alert("Ваша сумма после обмена будет равна " + (Math.round(ans*0.45)));}
+			else if ((val1=='rub')&&(val2=='usd')&&(ans>0)){			
+								alert("Ваша сумма после обмена будет равна " + (Math.round(ans/80)));}
+			else{"Что то не так!!!"}
+			
+		
+		
+	
+		
+
+				
+				
+					
+					
+			
+
+
+
+
+</script>
+</body>
+</html>  
